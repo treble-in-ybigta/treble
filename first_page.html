@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>명장의 조건 - 무엇이 트레블을 만드는가</title>
+
+
+
+    <link rel="shortcut icon" type ="image/png" href="./images/4x/ball.png"/>
+    <link rel ="stylesheet" href="first_page.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+    <script>
+        zingchart.MODULESDIR = "https://cdn.zingchart.com/modules/";
+        ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9", "ee6b7db5b51705a13dc2339db3edaf6d"];
+    </script>
+
+    <meta charset="UTF-8">
+
+    <script type="text/javascript">
+        $(document).ready(function($) {
+            //타이틀 모션
+            setTimeout(function(){
+                $('.main_titles p').addClass('on');
+            }, 500);
+            setTimeout(function(){
+                $('.main_titles strong').addClass('on');
+            }, 1400);
+            setTimeout(function(){
+                $('.mainTopNavi').addClass('on');
+            }, 1600);
+            uiSetting();
+        });
+
+
+        function hover(element) {
+            element.setAttribute('src', './images/alex_f.png');
+        }
+        function unhover(element) {
+            element.setAttribute('src', './images/4x/alex2.png');
+        }
+        function hoverr(element) {
+            element.setAttribute('src', './images/jose_m.png');
+        }
+        function unhoverr(element) {
+            element.setAttribute('src', './images/4x/jose2.png');
+        }
+        function hoverrr(element) {
+            element.setAttribute('src', './images/jupp_h.png');
+        }
+        function unhoverrr(element) {
+            element.setAttribute('src', './images/4x/jupp2.png');
+        }
+        function hoverrrr(element) {
+            element.setAttribute('src', './images/luis_e.png');
+        }
+        function unhoverrrr(element) {
+            element.setAttribute('src', './images/4x/luis2.png');
+        }
+        function hoverrrrr(element) {
+            element.setAttribute('src', './images/pep_g.png');
+        }
+        function unhoverrrrr(element) {
+            element.setAttribute('src', './images/4x/pep2.png');
+        }
+
+    </script>
+</head>
+
+
+<body>
+    <div id="wrap">
+        <div class="mainPage">
+            <h1 class="main_titles textItem">
+                //minititle이 class.p에 포함
+                <p></p>
+                //title이 class.strong에 포함
+                <strong></strong>
+            </h1>
+
+            <div class="mainTopNavi">
+                <ul>
+                    <li><img src=images/alex_f.png alt="Alex" onmouseover="unhover(this)" onmouseout="hover(this)";></li>
+                    <li><img src=images/jose_m.png alt="Jose" onmouseover="unhoverr(this)" onmouseout="hoverr(this)"></li>
+                    <li><img src=images/jupp_h.png alt="Jupp" onmouseover="unhoverrr(this)" onmouseout="hoverrr(this)"></li>
+                    <li><img src=images/luis_e.png alt="Luis" onmouseover="unhoverrrr(this)" onmouseout="hoverrrr(this)"></li>
+                    <li><img src=images/pep_g.png alt="Pep" onmouseover="unhoverrrrr(this)" onmouseout="hoverrrrr(this)"></li>
+                </ul>
+            </div>
+
+            <p class="script">트레블이란 대륙별 축구협회 내에 각 국가별로 존재하는 프로 축구 리그에서 한 클럽팀이 자국 정규리그, 자국 FA컵, 대륙별 클럽대항전 (챔피언스리그) 3개의 대회를 한 시즌에 모두 우승한 경우를 말한다. 이 중, 2개의 대회만 우승한 경우는 더블이라고 말한다. 트레블에서 단 한 대회만 부족한 더블, 무엇이 더블, 무엇이 트레블을 만드는지 감독들의 조건을 비교해본다.</p>
+
+            <a href="./second_page.html">
+                <div class="info textItem">
+                    <button id="myButton" type = "button" class="infoBtn">더 알아보기</button>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
